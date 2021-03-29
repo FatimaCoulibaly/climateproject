@@ -101,7 +101,6 @@ display: inline-block;
 
 
 
-
 .heading {
   font-family: Barlow, Bold;
   color: #372C2C;
@@ -122,10 +121,114 @@ display: inline-block;
 
 }
 
-.infographic {
-  text-align: center;
-  margin-top: -120px;
+
+
+* {
+  box-sizing: border-box;
+  margin-bottom :50px;
 }
+
+img {
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -400px;
+  color: #372C2C;
+  font-weight: bold;
+  font-size: 70px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 100px;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.next {
+  right: 100px;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: ;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
 
 .subtext {
   font-family: Catamaran, Regular;
@@ -135,33 +238,13 @@ display: inline-block;
 }
 
 
-.text1 {
-  font-family: Rouge Script, cursive;
-  color: #FAC84D;
-  font-size: 60px;
-  text-align: center;
-  padding: 50px;
-  border: 6px solid #FFE099;
-  margin: 180px;
+.blurb {
+  font-family: Catamaran, Regular;
+  color: #372C2C;
+  font-size: 20px;
+  text-align: left;
+  margin: 100px;
 }
-
-.capitalize {
-  color: #FFBF1F;
-  font-size: 60px;
-  font-family: Rouge Script, cursive;
-
-
-}
-
-.capitalize:hover {
-  color: #FFFFFF;
-  cursor: pointer;
-}
-
-
-
-
-
 
 
 
@@ -188,19 +271,109 @@ display: inline-block;
 <div class="underline">
 <h2> Reusing Plastic In Fashion </h2>
 </div>
+</div>
 
 
 <div class="subtext">
-<p>View Lillian Penther's intricate designs incorporating yarn and plastic.</p>
+<p>View Lillian Penther's intricate designs that incorporate yarn and plastic bags.</p>
 </div>
 </div>
 
-<div class="infographic">
-<img src= "https://lh3.googleusercontent.com/xNSRxhbSZbbnfFhQm4Aa0pIf9j11ZYaveIesrO-yWSgQCMMKmSP0tTb0_8aT9PZjLtotwxvzUHey0_RoffaOy98ZKDinxL73uK6V-aYJuVYE4nvCGiwCy9BzZ77dNWF1pq65j_ODNA=w2400" width="504" height="664">
-</div>
-</head>
 
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 8</div>
+    <img src="https://lh3.googleusercontent.com/xNSRxhbSZbbnfFhQm4Aa0pIf9j11ZYaveIesrO-yWSgQCMMKmSP0tTb0_8aT9PZjLtotwxvzUHey0_RoffaOy98ZKDinxL73uK6V-aYJuVYE4nvCGiwCy9BzZ77dNWF1pq65j_ODNA=w2400" width="504" height="664">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 8</div>
+    <img src="https://lh3.googleusercontent.com/L-z-zR047aA1AcTJhbchh9fF74OhswS8YOw-d7DbcPOKjWsV4ilHltvpNY0nB2uO4FYK4wOeyJsO1b9FuNMVsZkvBZNxsRwCukM87teWcs_V3heChDPuhkKUa7BCwzUFbnRuf5Fweg=w2400" width="504" height="672">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 8</div>
+    <img src="https://lh3.googleusercontent.com/ojoMLSrjVncL65dnm9Om_hsf1FSJHy4saiqUbXU2WxdJ1Cy5xxjXWxNBOyVjr0_D6tIKdB85JWzrxeBo58c85fH-btP0mtoK2kA3eUlpHwhvHxFT2QzXe_p1f7EDcihpsd6IWLCAyA=w2400" width="473" height="625">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 8</div>
+    <img src="https://lh3.googleusercontent.com/RTVIxD5xiOr0uwPDYY3bmLJ5Ao56fnPxWBvqM1ymhUcxg0nmRKHOmDYVy9cFLAc0lGk23Wc5C-uhglzx6r5w6wUsoxcYqNq2iQ7W-aHrUz8n8Yz2wmXD10tOV7A9C-00Y6Fxt5wQ7w=w2400" width="504" height="672">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 8</div>
+    <img src="https://lh3.googleusercontent.com/B1XdIWZpRxIn1fZy4G6Bhzrqc8cgjUBJLe2yfVvFYXrIofdyMhkwZTahEP_6BTh9VWIReeJKdOXAkR7tvjCWMJkmCT_cecr1InaoU8SY5_IxinaJ4E3VmRjDQflNtP_HFJ3eQt2mxw=w2400" width="504" height="672">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 8</div>
+    <img src="https://lh3.googleusercontent.com/bLM_hNstUZGWFIuhhS4OkIlMDxNJ2LUHOgArGK9z3MhE_Qq1FI4ggBQ3VeDXvFXZ2WETdoyZtM1fRsbc0H4_FMJDGHd6Lkw0FUxikr-UxYedPfAFoor1wJAyX-vkl0ISAhsTSkd1OA=w2400" width="504" height="672">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 8</div>
+    <img src="https://lh3.googleusercontent.com/SDPhEn9vHpM-PI2ac_J8pG25x9JVrk6mzVvX9iNz8lCWQ5GFiH_nIj-mNkr8ROwADc3Gz3BAfDAqYPQbffuLgSumEENqITi0u542woCmqk4pcBuiPwYA3Z6Oi9jEr_z_DRTC6h9bcw=w2400" width="504" height="672">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 8</div>
+    <img src="https://lh3.googleusercontent.com/iXGH-S2jwrlMbq35azPXDJQ7GVW7PR_291wVyIZzgV4pfMDCjatWYOm8gKwLCd7BNJAhD34j84JzC5mB0fHW9fKokSeT_OmRIh-91jI4ylRSZYKzXGJ3d9h4zXyolpznGGJScrVeoA=w2400" width="386" height="515">
+  </div>
+
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+
+
+
+
+
+
+<div class="blurb">
+<p>
+  
+  This bag is made completely out of recycled single-use plastic bags. To start this project I first had to amass a lot of plastic bags, which I thought would be difficult because of the plastic bag ban in New York City, yet I was able to find a significant amount of bags. Many restaurants print on the plastic bags that it is recyclable or can be returned to the store and then it would be recycled. Sadly, more often than not, most of those plastic bags end up in the trash after being used only for an average of 12 minutes. I reached out to my peers, asking them to collect bags from packages, laundry, food, etc… I was then able to repurpose those plastic bags that they would have thrown away into something new. There is a process of cutting the plastic bags in rows, then tying those strips together, and using it as plastic yarn(plarn) to knit or crochet. In total I think I used around 27 plastic bags, since each bag was a different size it is hard to make an exact estimate. Crocheting with plarn was definitely a new challenge, some textures were very fragile and would tear very easily and others would be much thicker and hard to work with. I modified one of my other bag patterns for this bag and it turned out great. The lettering is out of acrylic yarn which is also 100% plastic, so I thought it was fitting. This bag is very meaningful to me and I think that it portrays a very strong message. This bag is fully functional, strong, and since it is made out of plastic it will never decompose. I hope that this project shows how there are many ways to repurpose materials, even though it might not be obvious. Reducing waste and your carbon footprint are changes that can be done on an individual level and have a positive impact on the environment. Now that I have successfully made this bag, I will continue to make recycled plastic crochet pieces and sell them in order to donate the funds to climate change organizations. These are projects that don’t cost money, but can make a difference and protect our planet!
+
+</p>
+</div>
 
 
 </body>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+</script>
+
 </html>
